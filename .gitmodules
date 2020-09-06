@@ -1,0 +1,3 @@
+[submodule "sub/AttackDetection"]
+	path = sub/AttackDetection
+	url = https://github.com/ptresearch/AttackDetection.git
