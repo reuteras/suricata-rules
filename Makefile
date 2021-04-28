@@ -6,5 +6,7 @@ total:
 	./bin/create-total.sh
 update-git:
 	git submodule foreach git pull origin master
+init:
+	git submodule update --init
 
-.PHONY: clean force total update-git
+.PHONY: clean force total update-git init
