@@ -1,0 +1,4 @@
+# https://github.com/reuteras/suricata-rules 
+# Orig:
+# alert tcp any any -> any 80 (msg:"AD FS Replication"; flow:established, to_server; content:"POST"; http_method; content:"adfs/services/policystoretransfer"; http_uri; threshold:type limit,track by_src,count 1,seconds 3600; priority:3; sid:7000000; rev:1;)
+# Converted with snort2suricata
