@@ -2,7 +2,7 @@
 
 [[ ! -d total ]] && mkdir total
 
-find -E sub -regex ".*\.rules?" -print0 | \
+find -E local sub -regex ".*\.rules?" -print0 | \
     tr -d '\n' | \
     xargs -0 cat > total/total.rules
 
